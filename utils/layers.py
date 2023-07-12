@@ -1,8 +1,23 @@
-import tensorflow as tf
+'''
+This code was copied from: Vittorio Mazzia
+'''
 
-'''
-Code from EscVM_YT on GitHub (https://github.com/EscVM/EscVM_YT/blob/master/Notebooks/0%20-%20TF2.X%20Tutorials/tf_2_visual_attention.ipynb)
-'''
+# Copyright 2021 Vittorio Mazzia. All Rights Reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ==============================================================================
+
+import tensorflow as tf
 
 class ChannelAttention(tf.keras.layers.Layer):
       def __init__(self, filters, ratio, **kwargs):
